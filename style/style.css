@@ -1,0 +1,27 @@
+body{
+    background-color: #1F2932;
+    letter-spacing: 0.2em;
+}
+.weather{
+    max-width: 450px;
+}
+header h1{
+    color: #53CBED;
+}
+form h4{
+    color: #017A9B;
+}
+.weather-data, .icon{
+    background-color: #A4E4F5;
+}
+.weather-data{
+    padding-top: 10px;
+}
+.icon img{
+    position: relative;
+    top: -50px;
+    border-radius: 50%;
+}
+.icon{
+    height: 50px;
+}
