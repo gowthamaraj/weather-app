@@ -2,7 +2,7 @@ const key = 'Ayn5ngzSyhiA6Gu0NLlqMl2fbTVM29is';
 
 //get city code
 const getCity = async (city) =>{
-    const baseURL = 'http://dataservice.accuweather.com/locations/v1/cities/search';
+    const baseURL = 'https://dataservice.accuweather.com/locations/v1/cities/search';
     const query = `?apikey=${key}&q=${city}`;
     const response = await fetch(baseURL+query);
     const dataCity = await response.json();
@@ -11,7 +11,7 @@ const getCity = async (city) =>{
 
 //get weather
 const getWeather = async (code) =>{
-    const baseURL = 'http://dataservice.accuweather.com/currentconditions/v1/';
+    const baseURL = 'https://dataservice.accuweather.com/currentconditions/v1/';
     const query = `${code}?apikey=${key}`;
     const response = await fetch(baseURL+query);
     const dataWeather = await response.json();
